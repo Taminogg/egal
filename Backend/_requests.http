@@ -1,0 +1,189 @@
+@baseUrl = https://localhost:7001
+
+
+################################################## Checklist
+DELETE {{baseUrl}}/Checklist/DeleteChecklist/DeleteChecklist?id=1
+#####
+GET {{baseUrl}}/Checklist/GetAllChecklists/GetAllChecklists
+#####
+GET {{baseUrl}}/Checklist/GetChecklistWithId/GetChecklistWithId/1
+#####
+POST {{baseUrl}}/Checklist/AddNewChecklist/AddNewChecklist
+Content-type: application/json
+
+{
+   "customerName": "abc"
+}
+#####
+PUT {{baseUrl}}/Checklist/EditChecklist/EditChecklist
+Content-type: application/json
+
+{
+   "id": 1,
+   "customerName": "abc"
+}
+#####
+
+################################################## Conversation
+DELETE {{baseUrl}}/Conversation/DeleteConversation/DeleteConversation?id=1
+#####
+GET {{baseUrl}}/Conversation/GetAllConversations/GetAllConversations
+#####
+GET {{baseUrl}}/Conversation/GetConversationWithId/GetConversationWithId/1
+#####
+POST {{baseUrl}}/Conversation/AddNewConversation/AddNewConversation
+Content-type: application/json
+
+{
+   "orderId": 1
+}
+#####
+
+################################################## Csinquiry
+DELETE {{baseUrl}}/Csinquiry/DeleteCsinquiry/DeleteCsinquiry?id=1
+#####
+GET {{baseUrl}}/Csinquiry/GetAllCsinquiries/GetAllCsinquiries
+#####
+GET {{baseUrl}}/Csinquiry/GetCsinquiryWithId/GetCsinquiryWithId/1
+#####
+POST {{baseUrl}}/Csinquiry/AddNewCsinquiry/AddNewCsinquiry
+Content-type: application/json
+
+{
+   "container": "abc",
+   "fastLine": "abc",
+   "directLine": "abc",
+   "articleNumber": "abc",
+   "palletamount": 1,
+   "customer": "abc",
+   "abnumber": 1,
+   "bruttoWeightInKg": 1,
+   "incoterm": "abc",
+   "containersizeA": 1,
+   "containersizeB": 1,
+   "containersizeHc": 1,
+   "freeDetention": True,
+   "thctb": True,
+   "readyToLoad": "abc",
+   "loadingPlattform": "abc"
+}
+#####
+PUT {{baseUrl}}/Csinquiry/EditCsinquiry/EditCsinquiry
+Content-type: application/json
+
+{
+   "id": 1,
+   "container": "abc",
+   "fastLine": "abc",
+   "directLine": "abc",
+   "articleNumber": "abc",
+   "palletamount": 1,
+   "customer": "abc",
+   "abnumber": 1,
+   "bruttoWeightInKg": 1,
+   "incoterm": "abc",
+   "containersizeA": 1,
+   "containersizeB": 1,
+   "containersizeHc": 1,
+   "freeDetention": True,
+   "thctb": True,
+   "readyToLoad": "abc",
+   "loadingPlattform": "abc"
+}
+#####
+
+################################################## Order
+DELETE {{baseUrl}}/Order/DeleteOrder/DeleteOrder?id=1
+#####
+GET {{baseUrl}}/Order/GetAllOrders/GetAllOrders
+#####
+GET {{baseUrl}}/Order/GetOrderWithId/GetOrderWithId/1
+#####
+POST {{baseUrl}}/Order/AddOrder/AddNewOrder
+Content-type: application/json
+
+{
+   "status": 1,
+   "customerName": "abc",
+   "createdBy": "abc",
+   "approved": True,
+   "amount": 1,
+   "lastUpdated": "abc",
+   "checklistId": 1,
+   "csid": 1,
+   "tlid": 1
+}
+#####
+PUT {{baseUrl}}/Order/EditOrder/EditOrder
+Content-type: application/json
+
+{
+   "id": 1,
+   "status": 1,
+   "customerName": "abc",
+   "createdBy": "abc",
+   "approved": True,
+   "amount": 1,
+   "lastUpdated": "abc",
+   "checklistId": 1,
+   "csid": 1,
+   "tlid": 1
+}
+#####
+
+################################################## Tlinquiry
+DELETE {{baseUrl}}/Tlinquiry/DeleteTlinquiry/DeleteTlinquiry?id=1
+#####
+GET {{baseUrl}}/Tlinquiry/GetAllCsinquiries/GetAllTlinquiries
+#####
+GET {{baseUrl}}/Tlinquiry/GetTlinquiryWithId/GetTlinquiryWithId/1
+#####
+POST {{baseUrl}}/Tlinquiry/AddNewTlinquiry/AddNewTlinquiry
+Content-type: application/json
+
+{
+   "inquiryNumber": 1,
+   "sped": "abc",
+   "country": "abc",
+   "acceptingPort": "abc",
+   "expectedRetrieveWeek": "abc",
+   "weightInKg": 1,
+   "invoiceOn": "abc",
+   "retrieveDate": "abc",
+   "isContainer40": True,
+   "isContainerHc": True,
+   "retrieveLocation": "abc",
+   "debtCapitalGeneralForerunEur": 1,
+   "debtCapitalMainDol": 1,
+   "debtCapitalTrailingDol": 1,
+   "portOfDeparture": "abc",
+   "ets": "abc",
+   "eta": "abc",
+   "boat": "abc"
+}
+#####
+PUT {{baseUrl}}/Tlinquiry/EditTlinquiry/EditTlinquiry
+Content-type: application/json
+
+{
+   "id": 1,
+   "inquiryNumber": 1,
+   "sped": "abc",
+   "country": "abc",
+   "acceptingPort": "abc",
+   "expectedRetrieveWeek": "abc",
+   "weightInKg": 1,
+   "invoiceOn": "abc",
+   "retrieveDate": "abc",
+   "isContainer40": True,
+   "isContainerHc": True,
+   "retrieveLocation": "abc",
+   "debtCapitalGeneralForerunEur": 1,
+   "debtCapitalMainDol": 1,
+   "debtCapitalTrailingDol": 1,
+   "portOfDeparture": "abc",
+   "ets": "abc",
+   "eta": "abc",
+   "boat": "abc"
+}
+#####
